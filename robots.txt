@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techmobiles.co.za/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow search engines to index important pages
+Allow: /products/
+Allow: /about/
+Allow: /contact/

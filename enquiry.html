@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Enquiry - TechMobiles & Accessories</title>
+  <meta name="description" content="Make an enquiry about our mobile accessories, products, or partnership opportunities. Get pricing and availability information.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="enquiry-page">
+  <header>
+    <img src="image/logo.png" alt="TechMobiles Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Make an Enquiry</h1>
+    <p>Interested in our products, services, or partnership opportunities? Fill out the form below and we'll provide you with detailed information.</p>
+    
+    <form id="enquiryForm" class="enquiry-form">
+      <div class="form-group">
+        <label for="enquiryType">Enquiry Type *</label>
+        <select id="enquiryType" name="enquiryType" required>
+          <option value="">Select enquiry type</option>
+          <option value="service">Service Information</option>
+          <option value="product">Product Details</option>
+          <option value="wholesale">Wholesale Pricing</option>
+          <option value="partnership">Partnership</option>
+        </select>
+        <span class="error-message" id="enquiryTypeError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company/Organization</label>
+        <input type="text" id="company" name="company" placeholder="Your company name (if applicable)">
+      </div>
+
+      <div class="form-group">
+        <label for="enquiryName">Full Name *</label>
+        <input type="text" id="enquiryName" name="enquiryName" required placeholder="Your full name">
+        <span class="error-message" id="enquiryNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="enquiryEmail">Email Address *</label>
+        <input type="email" id="enquiryEmail" name="enquiryEmail" required placeholder="your.email@example.com">
+        <span class="error-message" id="enquiryEmailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="enquiryPhone">Phone Number *</label>
+        <input type="tel" id="enquiryPhone" name="enquiryPhone" required placeholder="+27 82 123 4567">
+        <span class="error-message" id="enquiryPhoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="productInterest">Product of Interest</label>
+        <select id="productInterest" name="productInterest">
+          <option value="">Select a product category</option>
+          <option value="SmartPhone">Smartphones</option>
+          <option value="Phone Cases">Phone Cases</option>
+          <option value="Chargers & Cables">Chargers & Cables</option>
+          <option value="Wireless Earbuds">Wireless Earbuds</option>
+          <option value="Screen Protectors">Screen Protectors</option>
+          <option value="Smartwatch Bands">Smartwatch Bands</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Estimated Quantity</label>
+        <select id="quantity" name="quantity">
+          <option value="">Select quantity</option>
+          <option value="1-10">1-10 units</option>
+          <option value="11-50">11-50 units</option>
+          <option value="51-100">51-100 units</option>
+          <option value="100+">100+ units</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="enquiryMessage">Detailed Enquiry *</label>
+        <textarea id="enquiryMessage" name="enquiryMessage" rows="8" required placeholder="Please provide detailed information about your enquiry, including specific products, requirements, or questions..."></textarea>
+        <span class="error-message" id="enquiryMessageError"></span>
+      </div>
+
+      <button type="submit" class="buy-btn">Submit Enquiry</button>
+    </form>
+
+    <div id="enquiryResponse" class="response-section" style="display: none;">
+      <h3>Thank You for Your Enquiry!</h3>
+      <div id="responseDetails"></div>
+    </div>
+
+    <div id="formSuccess" class="success-message" style="display: none;">
+      <h3>Enquiry Submitted Successfully!</h3>
+      <p>Thank you for your interest in TechMobiles. We'll get back to you within 24 hours with the information you requested.</p>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 TechMobiles & Accessories</p>
+  </footer>
+
+  <script src="js/form-validation.js"></script>
+  <script src="js/enquiry-handler.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
