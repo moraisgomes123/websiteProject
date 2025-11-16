@@ -1,4 +1,6 @@
-# websiteProject
+# TechMobiles & Accessories Website Project
+Project Description
+This project is an e-commerce website for TechMobiles & Accessories, a company specializing in mobile devices and accessories. The website is designed to provide a modern, professional, and fully responsive online presence to showcase products and handle customer inquiries. The site is built to adapt to various screen sizes, ensuring an optimal viewing experience on desktops, tablets, and mobile phones.
 
 # Changelog - Part 3 
 
