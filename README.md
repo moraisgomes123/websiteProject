@@ -49,6 +49,32 @@ Better error handling
 Optimized image loading
 Added keyboard navigation support
 
+## References
+
+HTML, CSS, and JavaScript: The project's structure is built using standard HTML5, CSS3 for styling, and JavaScript for client-side interactivity.
+
+Images: All images used on the website were sourced from the following:
+
+MobileFun (2025) Mobile accessories online store [online]. Available at: https://www.mobilefun.co.uk/ (Accessed: 20 August 2025). Coolors (2023) Color scheme generator [online]. Available at: https://coolors.co/ (Accessed: 20 August 2025). Behance (2025) Web and UI design inspiration [online]. Available at: https://www.behance.net/ (Accessed: 20 August 2025).
+
+Samsung Electronics, 2025. Samsung South Africa. [online] Available at: https://www.samsung.com/za/ [Accessed 23 August 2025].
+
+GSM Arena, 2025. Latest Mobile Phone Specifications. [online] Available at: https://www.gsmarena.com/ [Accessed 23 August 2025].
+
+Takealot, 2025. Online Shopping South Africa. [online] Available at: https://www.takealot.com/ [Accessed 23 August 2025].
+
+Unsplash, 2025. Free Stock Photos. [online] Available at: https://unsplash.com/ [Accessed 23 August 2025].
+
+Pexels, 2025. Free Stock Photos. [online] Available at: https://pexels.com/ [Accessed 23 August 2025].
+
+Icons:
+
+Font Awesome: For social media and other icons.
+
+Fonts:
+
+Google Fonts: Used for the primary text on the site.
+
 
 
 
