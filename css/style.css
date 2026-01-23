@@ -68,7 +68,7 @@ p {
 }
 
 /* ==========================================================================
-   LAYOUT STRUCTURE
+   HEADER & NAVIGATION LAYOUT
    ========================================================================== */
 header {
     background-color: var(--color-primary-dark);
@@ -78,52 +78,28 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
-main {
-    max-width: var(--max-width);
-    margin: 60px auto;
-    padding: 0 var(--spacing-md);
-}
-
-nav {
+/* Header top row - logo on left, search on right */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-lg);
+.logo {
+    height: 50px;
 }
 
-footer {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 20px;
-    margin-top: var(--spacing-lg);
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-}
-
-/* ==========================================================================
-   SEARCH & NAVIGATION COMPONENTS
-   ========================================================================== */
+/* Search bar positioned on right side */
 .search-bar {
     display: flex;
     gap: 8px;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .search-bar input {
@@ -177,6 +153,47 @@ footer {
 
 #search-suggestions li:hover {
     background: #f5f5f5;
+}
+
+/* Navigation menu centered below header top row */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+/* ==========================================================================
+   MAIN CONTENT & FOOTER
+   ========================================================================== */
+main {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    padding: 0 var(--spacing-md);
+}
+
+footer {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 20px;
+    margin-top: var(--spacing-lg);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
 }
 
 /* ==========================================================================
@@ -253,10 +270,6 @@ footer {
 /* ==========================================================================
    DECORATION 
    ========================================================================== */
-.logo {
-    height: 50px;
-}
-
 .hero {
     position: relative;
     width: 100%;
@@ -794,9 +807,24 @@ nav ul li a:focus {
         align-items: flex-start;
     }
     
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
     .logo {
         height: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+    }
+    
+    .search-bar {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .search-bar input {
+        width: 100%;
     }
     
     .Products-dropdown-content {
