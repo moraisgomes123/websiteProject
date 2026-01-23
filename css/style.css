@@ -174,29 +174,6 @@ nav ul {
 }
 
 /* ==========================================================================
-   MAIN CONTENT & FOOTER
-   ========================================================================== */
-main {
-    max-width: var(--max-width);
-    margin: 60px auto;
-    padding: 0 var(--spacing-md);
-}
-
-footer {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 20px;
-    margin-top: var(--spacing-lg);
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-}
-
-/* ==========================================================================
    DROPDOWN STYLES
    ========================================================================== */
 .Products-dropdown {
@@ -265,6 +242,29 @@ footer {
 
 .Products-dropdown:hover > a::after {
     transform: translateY(-50%) rotate(180deg);
+}
+
+/* ==========================================================================
+   MAIN CONTENT & FOOTER
+   ========================================================================== */
+main {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    padding: 0 var(--spacing-md);
+}
+
+footer {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 20px;
+    margin-top: var(--spacing-lg);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
 }
 
 /* ==========================================================================
@@ -377,10 +377,6 @@ nav ul li a:focus {
     background-color: #010912;
     transform: translateY(-2px) scale(1.02);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.search-bar button:hover {
-    background-color: #e6b800;
 }
 
 .Products-dropdown-content a:hover {
