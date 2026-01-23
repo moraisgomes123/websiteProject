@@ -24,16 +24,32 @@
 </head>
 <body>
   <header>
-    <img src="image/logo.png" alt="TechMobiles Logo - Premium Mobile Accessories" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <a href="index.html"><img src="image/logo.png" alt="TechMobiles Logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="Products-dropdown">
+                  
+                    <a href="#" tabindex="0">Products</a>
+                    <ul class="Products-dropdown-content">
+                        <li><a href="shop-mobile-phone.html">Smart Phone</a></li>
+                        <li><a href="shop-phone-cases.html">Phone Cases</a></li>
+                        <li><a href="shop-chargers-cables.html">Chargers & Cables</a></li>
+                        <li><a href="shop-wireless-earbuds.html">Wireless Earbuds</a></li>
+                        <li><a href="shop-screen-protectors.html">Screen Protectors</a></li>
+                        <li><a href="shop-smartwatch-bands.html">Smartwatch Bands</a></li>
+                    </ul>
+                </li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<div class="search-wrapper">
+  <input id="search-input" type="text" placeholder="Search products..." />
+  <button id="search-btn">Search</button>
+  <ul id="search-suggestions"></ul>
+</div>
   </header>
 
   <section class="hero">
